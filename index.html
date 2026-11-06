@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dea Fei Eryza Serguel - Creative Portfolio 2026</title>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background Animated Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Sticky Dynamic Navigation Bar -->
+  <header class="navbar">
+    <a href="#hero" class="logo">
+      <i class="fa-solid font-bold fa-code text-accent"></i> SERGUEL
+    </a>
+    
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Light/Dark Mode Switch Button -->
+    <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+      <i class="fa-solid fa-moon"></i>
+      <span id="theme-text">DARK</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- PAGE 1: HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-grid">
+        <div class="hero-text-content reveal">
+          <div class="hero-badge">
+            <i class="fa-solid fa-circle"></i> Available for Front-End Projects
+          </div>
+          <h1 class="hero-title">
+            CREATIVE <span class="highlight">PORTFOLIO</span>
+          </h1>
+          <p class="hero-subtitle">
+            Hi, I’m <strong>Dea Fei Eryza Serguel</strong>. 3rd-year CS student crafting warm, pixel-perfect user interfaces and expressive visual designs.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">Get In Touch <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#about" class="btn-secondary">Explore Work</a>
+          </div>
+        </div>
+
+        <div class="hero-portrait-wrapper reveal">
+          <div class="portrait-card" id="tilt-card">
+            <img src="photos/PAGE1.png" alt="Dea Fei Eryza Serguel Portrait" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80';">
+            <div class="portrait-overlay-badge">
+              <h3>SERGUEL, DEA FEI ERYZA</h3>
+              <p>Front-End & Graphic Designer • 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: ABOUT ME SECTION -->
+    <section id="about" class="section-padding">
+      <div class="section-header reveal">
+        <span class="section-tag">// GET TO KNOW ME</span>
+        <h2 class="section-title">ABOUT ME</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-frame reveal">
+          <img src="photos/PAGE2.png" alt="Dea Portrait" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80';">
+        </div>
+
+        <div class="about-content-card reveal">
+          <span class="nickname-banner">YOU CAN CALL ME</span>
+          <h3 class="about-headline">DEA! ✦</h3>
+          <p class="about-bio">
+            I’m a 3rd-year Computer Science student specializing in front-end development and graphic design. I live at the intersection of code and canvas—turning clean UI architecture into engaging, pixel-perfect web and mobile experiences. Whether I’m designing intuitive interfaces, styling layouts, or crafting digital assets and brand aesthetics, I love making technology look as good as it works.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <h4>3rd Year</h4>
+              <p>BS Computer Science</p>
+            </div>
+            <div class="highlight-item">
+              <h4>UNP</h4>
+              <p>University of Northern Philippines</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: RESUME & SKILLS SECTION -->
+    <section id="resume" class="section-padding">
+      <div class="section-header reveal">
+        <span class="section-tag">// EXPERIENCE & CAPABILITIES</span>
+        <h2 class="section-title">RESUME & SKILLS</h2>
+      </div>
+
+      <div class="resume-grid">
+        <!-- Education & Experience -->
+        <div>
+          <div class="card reveal">
+            <div class="card-header-flex">
+              <h3 class="card-title"><i class="fa-solid fa-graduation-cap text-accent"></i> Education</h3>
+              <span class="timeline-badge">2023 - Present</span>
+            </div>
+            <h4 style="font-size: 1.1rem; margin-bottom: 4px;">BS in Computer Science</h4>
+            <p class="card-subtitle">University of Northern Philippines (UNP)</p>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">Currently in 3rd Year standing, focusing on UI/UX, Web Architecture, and Graphics.</p>
+          </div>
+
+          <div class="card reveal">
+            <div class="card-header-flex">
+              <h3 class="card-title"><i class="fa-solid fa-briefcase text-accent"></i> Experience & Leadership</h3>
+            </div>
+
+            <div style="margin-bottom: 1.2rem;">
+              <div class="card-header-flex">
+                <h4 style="font-size: 1rem;">2nd Year Rep & Front-End Committee</h4>
+                <span class="timeline-badge">2024 - 2025</span>
+              </div>
+              <p class="card-subtitle">Computer Science Society</p>
+            </div>
+
+            <hr style="border: 0; border-top: 1px dashed var(--border-color); margin: 1rem 0;">
+
+            <div>
+              <div class="card-header-flex">
+                <h4 style="font-size: 1rem;">3rd Year Rep & Graphic Designer</h4>
+                <span class="timeline-badge">2026 - Present</span>
+              </div>
+              <p class="card-subtitle">ACTS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills & Project -->
+        <div>
+          <div class="card reveal">
+            <h3 class="card-title" style="margin-bottom: 1rem;"><i class="fa-solid fa-layer-group text-accent"></i> Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-box">
+                <i class="fa-solid fa-pen-nib" style="font-size: 1.4rem; color: var(--accent-secondary);"></i>
+                <span class="skill-name">Affinity</span>
+              </div>
+              <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" class="skill-icon" alt="Canva">
+                <span class="skill-name">Canva</span>
+              </div>
+              <div class="skill-box">
+                <i class="fa-solid fa-paint-brush" style="font-size: 1.4rem; color: var(--accent-secondary);"></i>
+                <span class="skill-name">Procreate</span>
+              </div>
+              <div class="skill-box">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-icon" alt="Java">
+                <span class="skill-name">Java</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h3 class="card-title"><i class="fa-solid fa-rocket text-accent"></i> Project</h3>
+            <h4 style="font-size: 1.1rem; margin-top: 0.5rem;">Intellearn UI / Front-End</h4>
+            <p class="card-subtitle" style="margin-top: 4px;">Role: UI/UX & Front-End Developer</p>
+            
+            <div class="capstone-preview">
+              <img src="photos/PHOTO4.png" alt="Intellearn Preview" onerror="this.src='photos/PAGE3.png';">
+            </div>
+
+            <a href="https://github.com/Zedric18/intellearn_repo" target="_blank" rel="noopener noreferrer" class="btn-primary" style="width: 100%; justify-content: center;">
+              View Project on GitHub <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 4: CONTACT SECTION -->
+    <section id="contact" class="section-padding">
+      <div class="contact-container reveal">
+        <div>
+          <h2 class="contact-title">CONTACT<br><span style="color: var(--accent-secondary);">ME</span></h2>
+          <p class="contact-description">
+            Have a project in mind, an opportunity, or just want to connect? Feel free to reach out via email or any of my social channels below!
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <a href="https://github.com/deyapei" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon-wrapper"><i class="fa-brands fa-github"></i></div>
+                <span>github.com/deyapei</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:dfe.serguel.@unp.edu.ph" class="contact-item" id="email-link">
+                <div class="contact-icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+                <span>dfe.serguel.@unp.edu.ph</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://tiktok.com/@deyapei" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon-wrapper"><i class="fa-brands fa-tiktok"></i></div>
+                <span>@deyapei</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-image-wrapper">
+          <img src="photos/PAGE1.png" alt="Contact Portrait" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80';">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dea Fei Eryza Serguel. Built with HTML, CSS & Vanilla JS.</p>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Copied to clipboard! ✦</div>
+
+  <!-- INTERACTIVE JAVASCRIPT -->
+  <script>
+    // 1. LIGHT / DARK MODE TOGGLE SYSTEM
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeText = document.getElementById('theme-text');
+    const themeIcon = themeToggleBtn.querySelector('i');
+
+    function setTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('portfolio-theme', theme);
+
+      if (theme === 'light') {
+        themeText.textContent = 'LIGHT';
+        themeIcon.className = 'fa-solid fa-sun';
+      } else {
+        themeText.textContent = 'DARK';
+        themeIcon.className = 'fa-solid fa-moon';
+      }
+    }
+
+    const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+    setTheme(savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    });
+
+    // 2. SCROLL REVEAL ANIMATIONS
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // 3. 3D TILT EFFECT FOR HERO CARD
+    const tiltCard = document.getElementById('tilt-card');
+
+    if (tiltCard) {
+      tiltCard.addEventListener('mousemove', (e) => {
+        const rect = tiltCard.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        
+        const rotateX = (-y / rect.height) * 15;
+        const rotateY = (x / rect.width) * 15;
+        
+        tiltCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+      });
+
+      tiltCard.addEventListener('mouseleave', () => {
+        tiltCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+      });
+    }
+
+    // 4. FLOATING CANVAS PARTICLES
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let particles = [];
+    const particleCount = 45;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2.5 + 0.5;
+        this.speedY = Math.random() * 0.6 + 0.2;
+        this.opacity = Math.random() * 0.5 + 0.1;
+      }
+
+      update() {
+        this.y -= this.speedY;
+        if (this.y < 0) {
+          this.y = canvas.height;
+          this.x = Math.random() * canvas.width;
+        }
+      }
+
+      draw() {
+        ctx.fillStyle = `rgba(229, 131, 37, ${this.opacity})`;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    for (let i = 0; i < particleCount; i++) {
+      particles.push(new Particle());
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+      requestAnimationFrame(animateParticles);
+    }
+
+    animateParticles();
+
+    // 5. EMAIL COPY TO CLIPBOARD TOAST
+    const emailLink = document.getElementById('email-link');
+    const toast = document.getElementById('toast');
+
+    if (emailLink) {
+      emailLink.addEventListener('click', (e) => {
+        const email = 'dfe.serguel.@unp.edu.ph';
+        navigator.clipboard.writeText(email).then(() => {
+          toast.classList.add('show');
+          setTimeout(() => toast.classList.remove('show'), 3000);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
